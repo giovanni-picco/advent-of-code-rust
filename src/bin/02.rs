@@ -30,15 +30,7 @@ pub fn part_one(input: &str) -> Option<u64> {
 }
 
 pub fn part_two(input: &str) -> Option<u64> {
-    let boxes = extract_box(input);
-
-    let mut length = 0u64;
-    for b in boxes {
-
-
-    }
-
-    Some(length)
+    None
 }
 
 #[cfg(test)]
@@ -56,8 +48,8 @@ mod tests {
     #[test]
     fn test_part_two() {
         let result = part_two(&advent_of_code::template::read_file_part("examples", DAY, 1));
-        assert_eq!(result, Some(34));
+        assert_eq!(result, None);
         let result = part_two(&advent_of_code::template::read_file_part("examples", DAY, 2));
-        assert_eq!(result, Some(14));
+        assert_eq!(result, None);
     }
 }
